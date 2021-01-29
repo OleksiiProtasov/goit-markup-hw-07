@@ -1,9 +1,25 @@
 //normalize
 @import 'base/normalize';
-// font
+// base
+@import 'base/centering';
 @import 'base/font';
 //size container
 @import 'base/container';
 //variable
+@import 'components/logo';
+//utils
+@import 'utils/color';
 //visually-hidden
 @import 'utils/visually-hidden';
+//header
+.header-box {
+    @include centering();
+}
+
+.logo-web {
+    @include logo($baseColor);
+}
+
+.logo-studio {
+    @include logo($darkColor);
+}

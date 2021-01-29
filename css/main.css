@@ -269,6 +269,10 @@ summary {
   display: list-item;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* roboto-regular - cyrillic */
 @font-face {
   font-family: 'Roboto';
@@ -319,5 +323,37 @@ summary {
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo-web {
+  color: #2196F3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.logo-studio {
+  color: #000000;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 /*# sourceMappingURL=main.css.map */
