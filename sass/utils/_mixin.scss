@@ -1,0 +1,11 @@
+@mixin centering ($flex: flex) {
+    display: $flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin animation ($part) {
+    transition-property: $part;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

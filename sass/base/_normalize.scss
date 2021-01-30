@@ -332,6 +332,18 @@ summary {
     display: list-item;
 }
 
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
