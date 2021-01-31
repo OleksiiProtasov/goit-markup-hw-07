@@ -6,8 +6,6 @@
         @import 'utils/variables';
         @import 'utils/mixin';
         @import 'utils/placeholders';
-        @import 'utils/visually-hidden';
-        @import 'components/logo';
         @import 'components/page-header';
         @import 'components/footer';
         // body color 
@@ -59,7 +57,7 @@
             background: #2196F3;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         }
-        /*  modal screan */
+        /*  modal screen */
         
         .backdrop {
             position: fixed;
@@ -442,31 +440,10 @@
             }
         }
         
-        .our-client-title {
-            margin: 0 auto 50px;
-            font-family: Roboto;
-            font-weight: bold;
-            font-size: 36px;
-            line-height: 42px;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #212121;
-        }
-        
         .our-client-list {
             display: inline-flex;
             justify-content: center;
             &__item {
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                box-sizing: border-box;
-                fill: $colorSocialLink;
-                border: 1px solid $colorSocialLink;
-                width: 170px;
-                height: 90px;
-                border-radius: 4px;
-                @include animation (fill);
                 &:not(:last-child) {
                     margin-right: 30px;
                 }
@@ -481,7 +458,7 @@
                 width: 170px;
                 height: 90px;
                 border-radius: 4px;
-                @include animation (all);
+                @include animation (fill);
                 &:focus,
                 &:hover {
                     border-color: $baseColor;
@@ -541,7 +518,7 @@
                 margin-left: $card-set-gap;
                 margin-top: $card-set-gap;
             }
-            &__thump-img {
+            &__link {
                 position: relative;
                 display: block;
                 background: #FFFFFF;
@@ -552,8 +529,8 @@
                     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
                     outline: none;
                 }
-                &:focus .hidden-text,
-                &:hover .hidden-text {
+                &:focus .box-about-img__about,
+                &:hover .box-about-img__about {
                     transform: translateY(0);
                 }
             }
@@ -571,9 +548,7 @@
                 width: 100%;
                 transform: translateY(101%);
                 background-color: rgba(33, 150, 243, 0.9);
-                transition-property: transform;
-                transition-duration: $transition-duration;
-                transition-timing-function: $transition-timing-function;
+                @include animation(transform);
                 box-shadow: none;
             }
             &__text {
@@ -587,73 +562,6 @@
                 line-height: 28px;
                 letter-spacing: 0.03em;
             }
-        }
-        
-        .img-portfolio {
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: -1 * $card-set-gap;
-            margin-top: -1 * $card-set-gap;
-        }
-        
-        .img-portfolio-li {
-            display: block;
-            flex-basis: calc(100% / 3 - $card-set-gap);
-            margin-left: $card-set-gap;
-            margin-top: $card-set-gap;
-        }
-        
-        .prt-foto-prt {
-            position: relative;
-            display: block;
-            background: #FFFFFF;
-            transition-property: box-shadow;
-            transition-duration: $transition-duration;
-            transition-timing-function: $transition-timing-function;
-        }
-        
-        .prt-foto-prt:focus,
-        .prt-foto-prt:hover {
-            background: #FFFFFF;
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-            outline: none;
-        }
-        
-        .prt-foto-prt:focus .about-foto-div,
-        .prt-foto-prt:hover .about-foto-div {
-            transform: translateY(0);
-        }
-        
-        .prt-foto-prt-div {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .about-foto-div {
-            position: absolute;
-            display: block;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            transform: translateY(101%);
-            background-color: rgba(33, 150, 243, 0.9);
-            transition-property: transform;
-            transition-duration: $transition-duration;
-            transition-timing-function: $transition-timing-function;
-            box-shadow: none;
-        }
-        
-        .about-foto-p {
-            color: $prime-background-color;
-            background-color: rgba(33, 153, 243, 0.9);
-            margin: 0;
-            padding: 63px 24px;
-            font-family: Roboto;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 28px;
-            letter-spacing: 0.03em;
         }
         /* our projects */
         
@@ -684,35 +592,4 @@
                 text-align: left;
                 color: $colorSocialLink;
             }
-        }
-        
-        .portfolio-wedo {
-            padding: 20px 24px;
-            border-right: 1px solid #eeeeee;
-            border-bottom: 1px solid #eeeeee;
-            border-left: 1px solid #eeeeee;
-        }
-        
-        .wedo {
-            margin: 0;
-            font-family: Roboto;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 36px;
-            letter-spacing: 0.06em;
-            text-align: left;
-            color: #212121;
-        }
-        
-        .aboutwedo {
-            margin: 0;
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 30px;
-            letter-spacing: 0.03em;
-            text-align: left;
-            color: $colorSocialLink;
         }
