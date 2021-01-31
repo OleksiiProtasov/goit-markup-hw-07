@@ -13,35 +13,35 @@
 <body>
     <header class="header-scn">
         <div class="container">
-            <div class="header-box">
+            <div class="header-scn__box">
                 <nav>
                     <ul class="site-nav ">
-                        <li class="logo-header">
+                        <li class="site-nav__logo">
                             <a href="./index.htm"> <span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
                         </li>
-                        <li class="itemheader">
-                            <a href="./index.htm" class="link-header">Студия</a>
+                        <li class="site-nav__item">
+                            <a href="./index.htm" class="site-nav__link  ">Студия</a>
                         </li>
-                        <li class="itemheader">
-                            <a href="./portfolio.html" class="link-header current">Портфолио</a>
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html" class="site-nav__link  site-nav__link--current">Портфолио</a>
                         </li>
-                        <li class="itemheader">
-                            <a href="# " class="link-header">Контакты</a>
+                        <li class="site-nav__item">
+                            <a href="# " class="site-nav__link ">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="conect">
-                    <li class="itemheader">
-                        <a href="mailto:info@devstudio.com" class="conect-address">
-                            <svg class="icon-header" width="16px" height="12px">
+                <ul class="connect-box">
+                    <li class="site-nav__item">
+                        <a href="mailto:info@devstudio.com" class="connect-box__mail">
+                            <svg class="connect-box__icon" width="16px" height="12px">
                             <use href="./photo/icon.svg#icon-envelope"></use>
                         </svg >
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="itemheader">
-                        <a href="tel:+380961111111" class="conect-address">
-                            <svg class="icon-header" width="10px" height="16px">
+                    <li class="site-nav__item">
+                        <a href="tel:+380961111111" class="connect-box__tel">
+                            <svg class="connect-box__icon" width="10px" height="16px">
                             <use href="./photo/icon.svg#icon-smartphone"></use>
                         </svg> +380961111111
                         </a>
@@ -217,51 +217,51 @@
 
     <!--foot-->
 
-    <footer>
-        <div class="container footer-firs-div ">
-            <div class="address-ftr ">
-                <a href="# "><span class="webfoot ">Web</span><span class="studiofoot ">Studio</span></a>
-                <address class="address ">г. Киев, пр-т Леси Украинки, 26</address>
+    <footer class="footer">
+        <div class="container footer__general-box">
+            <div class="connect">
+                <a href="# "><span class="logo-web-foot ">Web</span><span class="logo-studio-foot ">Studio</span></a>
+                <address class="connect__address">г. Киев, пр-т Леси Украинки, 26</address>
                 <ul>
-                    <li class="item ">
-                        <a href="mailto:info@example.com "><span class="howconectfoot ">info@example.com</span></a>
+                    <li class="connect__item">
+                        <a href="mailto:info@example.com "><span class="connect__how-connect-link-footer ">info@example.com</span></a>
                     </li>
-                    <li class="item ">
-                        <a href="tel:+380961111111 "><span class="howconectfoot ">+380961111111</span></a>
+                    <li class="conect__item ">
+                        <a href="tel:+380961111111 "><span class="connect__how-connect-link-footer">+380961111111</span></a>
                     </li>
                 </ul>
             </div>
-            <div class="connect-ftr">
-                <h3 class="connect-title ">ПРИСОЕДИНЯЙТЕСЬ</h3>
-                <ul class="connect-ftr-ul ">
-                    <li class="connect-ftr-li ">
-                        <a class="connect-frt-a " href=" "><svg  width="20px " height="20px ">
+            <div class="general-social-link-box">
+                <h3 class="general-social-link-box__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                <ul>
+                    <li class="general-social-link-box__item">
+                        <a class="general-social-link-box__link" href=" "><svg  width="20px " height="20px ">
                             <use href="./photo/icon.svg#icon-instagram "></use></svg></a>
                     </li>
-                    <li class="connect-ftr-li ">
-                        <a class="connect-frt-a " href=" "><svg  width="20px " height="20px ">
+                    <li class="general-social-link-box__item">
+                        <a class="general-social-link-box__link" href=" "><svg  width="20px " height="20px ">
                             <use href="./photo/icon.svg#icon-Group "></use></svg></a>
                     </li>
-                    <li class="connect-ftr-li ">
-                        <a class="connect-frt-a " href=" "><svg  width="20px " height="20px ">
+                    <li class="general-social-link-box__item">
+                        <a class="general-social-link-box__link" href=" "><svg  width="20px " height="20px ">
                             <use href="./photo/icon.svg#icon-facebook "></use></svg></a>
                     </li>
-                    <li class="connect-ftr-li ">
-                        <a class="connect-frt-a " href=" "><svg  width="20px " height="20px ">
+                    <li class="general-social-link-box__item">
+                        <a class="general-social-link-box__link" href=" "><svg  width="20px " height="20px ">
                             <use href="./photo/icon.svg#icon-linkedin "></use></svg></a>
                     </li>
                 </ul>
             </div>
-            <div class="distribution-ftr">
-                <h3 class="connect-title">ПОДПИШИСЬ НА РАССЫЛКУ</h3>
-                <div class="discription-form">
+            <div class="subscribe-box">
+                <h3 class="subscribe-box__title">ПОДПИШИСЬ НА РАССЫЛКУ</h3>
+                <div class="subscribe-box-form">
                     <form class="" action="distribution">
-                        <input class="distribution-input" type="mail" name="mail" id="distribution" placeholder="E-mail">
+                        <input class="subscribe-box-form__input-form" type="mail" name="mail" id="distribution" placeholder="E-mail">
                     </form>
-                    <button class="footer-btn"> 
-                            <div class="footer-name-btn"> 
-                                <span class="distribution-text-btn" >ПОДПИСАТЬСЯ</span>
-                                <svg class="distribution-svg" width="24px " height="24px">
+                    <button class="subscribe-btn"> 
+                            <div class="subscribe-btn__label"> 
+                                <span class="subscribe-btn__title" >ПОДПИСАТЬСЯ</span>
+                                <svg class="subscribe-btn__svg" width="24px " height="24px">
                                 <use href="./photo/icon.svg#icon-send "></use></svg>
                             </div>
                         </button>
@@ -271,6 +271,5 @@
 
         </div>
     </footer>
-
 
 </body>
