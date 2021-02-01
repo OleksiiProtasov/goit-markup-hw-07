@@ -627,7 +627,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 230px;
-  padding-right: 70px;
+  margin-right: 70px;
 }
 
 .connect__address {
@@ -1161,6 +1161,7 @@ body {
 }
 
 .thump-space__list {
+  position: relative;
   max-width: 370px;
 }
 
@@ -1169,10 +1170,11 @@ body {
 }
 
 .thump-space__text-cont {
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(47, 48, 58, 0.8);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .thump-space__text-cont__text {
@@ -1188,13 +1190,13 @@ body {
   color: #FFFFFF;
 }
 
-.ourteam-scn {
+.our-team-scn {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #F5F4FA;
 }
 
-.ourteam-scn__title {
+.our-team-scn__title {
   margin: 0;
   padding-bottom: 50px;
   font-family: Roboto;
@@ -1205,7 +1207,7 @@ body {
   text-align: center;
 }
 
-.ourteam-card-list {
+.our-team-card-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1291,7 +1293,6 @@ body {
   fill: #ffffff;
 }
 
-/*  наши клиенты    */
 .our-client-scn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1492,7 +1493,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* our projects */
 .text-container {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
